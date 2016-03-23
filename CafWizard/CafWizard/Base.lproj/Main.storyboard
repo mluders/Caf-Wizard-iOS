@@ -18,7 +18,6 @@
             <string>ProximaNova-Semibold</string>
             <string>ProximaNova-Semibold</string>
             <string>ProximaNova-Semibold</string>
-            <string>ProximaNova-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -182,7 +181,7 @@
             </objects>
             <point key="canvasLocation" x="1043" y="254"/>
         </scene>
-        <!--View Controller-->
+        <!--Tell Bon Appetit-->
         <scene sceneID="5yH-ca-Zq3">
             <objects>
                 <viewController id="5nt-Sr-vcA" sceneMemberID="viewController">
@@ -194,16 +193,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Dear Bon Appétit..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LK4-E5-mRj">
-                                <rect key="frame" x="13" y="80" width="295" height="235"/>
-                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Dear Bon Appetit, please" translatesAutoresizingMaskIntoConstraints="NO" id="mUt-bp-hkZ">
+                                <rect key="frame" x="7" y="72" width="306" height="254"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mUt-bp-hkZ" secondAttribute="trailing" constant="-9" id="DAk-xR-qaq"/>
+                            <constraint firstItem="mUt-bp-hkZ" firstAttribute="top" secondItem="5Cu-Yh-8Y1" secondAttribute="bottom" constant="8" id="EEv-Zv-cvU"/>
+                            <constraint firstItem="mUt-bp-hkZ" firstAttribute="leading" secondItem="uxU-1c-sID" secondAttribute="leadingMargin" constant="-9" id="fCs-rc-H8t"/>
+                            <constraint firstItem="yKA-fJ-fyn" firstAttribute="top" secondItem="mUt-bp-hkZ" secondAttribute="bottom" constant="242" id="z0x-wz-SUy"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8tL-zV-Xi7"/>
+                    <navigationItem key="navigationItem" title="Tell Bon Appetit" id="8tL-zV-Xi7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmL-LG-oEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
